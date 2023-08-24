@@ -409,6 +409,13 @@ void End_Game(string a, string b)
     cin >> choice;
     if (choice == 'Y' || choice == 'y')
     {
+        char num= '1';
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                display [i] [j] = num;
+                num++;
+            }
+        }
         Display_board();
         Game_play(a, b);
     }
