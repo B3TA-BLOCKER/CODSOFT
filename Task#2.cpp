@@ -89,8 +89,13 @@ void Calculator(void){
             cin>>num1;
             cout<<"\t\t\t\t Enter The Second Number : ";
             cin>>num2;
-            result = num1/num2;
-            cout<<"\t\t\t\t  "<<num1 <<"/"<<num2<<" = "<<result<<endl;
+            if(num2==0){
+               cout<<" \t\t\t\t  Math Error !!!!!"<<endl;
+            }
+           else{
+              result = num1/num2;
+               cout<<"\t\t\t\t  "<<num1 <<"/"<<num2<<" = "<<result<<endl;
+           }
         }
         break;
         case (5):{
